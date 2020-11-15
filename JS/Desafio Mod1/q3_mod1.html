@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Curso de JavaScript Werneck
+        </title>
+    </head>
+    <body>
+        <script>
+            function temHabilidade(skills) {
+                if (skills.indexOf("Javacript", 0) == -1)
+                    return false;
+                return true;
+            }
+            var skills = ["Javascript", "ReactJS", "React Native"];
+            console.log(temHabilidade(skills)); // true ou false
+        </script>
+    </body>
+</html>

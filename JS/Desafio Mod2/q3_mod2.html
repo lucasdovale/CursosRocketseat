@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Curso de JavaScript Werneck
+        </title>
+    </head>
+    <body>
+        <div id="app">
+            <div class="box"></div>
+        </div>
+        <ul id='lista'></ul>
+        <script>
+
+           function preencher() {
+                var nomes = ["Diego", "Gabriel", "Lucas"];
+                var lista = document.querySelector('#lista');
+                for (nome of nomes) {
+                    var item = document.createElement('li');
+                    item.appendChild(document.createTextNode(nome));
+                    lista.appendChild(item);
+                }
+           }
+           preencher();
+
+        </script>
+    </body>
+</html>

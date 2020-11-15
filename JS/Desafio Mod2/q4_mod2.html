@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Curso de JavaScript Werneck
+        </title>
+    </head>
+    <body>
+        <div id="app">
+            <div class="box"></div>
+        </div>
+        <input type="text" name="nome">
+        <button onClick="adicionar()">Adicionar</button>
+        <ul id='lista'></ul>
+        <script>
+
+            var lista = document.querySelector('#lista');
+            var input = document.querySelector('input');
+
+            function add(texto) {
+                var item = document.createElement('li');
+                item.appendChild(document.createTextNode(texto));
+                lista.appendChild(item);
+            }
+
+            function adicionar() {
+                add(input.value);
+                input.value = "";
+            }
+
+        </script>
+    </body>
+</html>
